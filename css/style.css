@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+header .topNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: rgb(185, 226, 241);
+    font-size: 15px;
+}
+.topNav select{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.topNav span a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.topNav span a:hover, .topNav select:hover{
+    color: grey;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-weight: 500;
+    margin-right: -120px;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+nav ul li #saleTag{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 8px;
+    padding:4px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+nav ul li #newTag{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 8px;
+    padding:4px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+nav .logo{
+    width: 300px;
+}
+nav .accountProfile{
+    display: flex;
+    gap: 20px;
+}
+.hero{
+    padding: 90px 120px;
+    background-image: url(../images/mainBG1.jpg);
+    background-repeat: no-repeat;
+    background-position:center right;
+    background-size: contain;
+}
+.hero h1{
+    font-size: 55px;
+    line-height: 1.3em;
+    width: 635px;
+}
+.jacketDiv{
+    display: flex;
+    gap: 35px;
+    margin: 40px 0px;
+}
+.jacketDiv .jacketContent>p{
+    color: #706a6a;
+    width: 515px;
+    line-height: 1.4em;
+}
+.jacketDiv .jacketContent .shopCollectBtn{
+    display: inline-block;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 35px;
+    margin: 70px 0px;
+    transition: all 0.3s ease;
+}
+.jacketContent .shopCollectBtn:hover{
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.jeanBy{
+    display: inline-block;
+}
+.jeanBy p{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px 0px;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+    gap: 40px;
+}
+.features>div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.features .featureContent p{
+    color: rgb(110, 107, 107);
+    margin-top: 5px;
+}
