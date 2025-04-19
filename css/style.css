@@ -79,6 +79,7 @@ nav .accountProfile{
     background-repeat: no-repeat;
     background-position:center right;
     background-size: contain;
+    background-color: #F8F8F8;
 }
 .hero h1{
     font-size: 55px;
@@ -135,4 +136,50 @@ nav .accountProfile{
 .features .featureContent p{
     color: rgb(110, 107, 107);
     margin-top: 5px;
+}
+.shopCategory{
+    padding: 90px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shopCategory h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.shopCategory p{
+    width: 400px;
+    margin: 20px 0px;
+    color: #706a6a;
+    line-height: 1.4em;
+    text-align: center;
+}
+.carousel{
+    display: flex;
+    gap:30px;
+    margin: 15px 0px;
+}
+.carousel .imgDiv{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+}
+.carousel div img{
+    width: 250px;
+}
+.item{
+    text-align: center;
+}
+.item .caption{
+    margin-top: 15px;
+}
+.item .caption b{
+    font-weight: 500;
+}
+.item .caption span{
+    font-size: 10px;
+    position: relative;
+    top: -4px;
+    right: -2px;
 }
