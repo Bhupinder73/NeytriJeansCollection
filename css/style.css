@@ -168,7 +168,7 @@ nav .accountProfile{
 .carousel div img{
     width: 250px;
 }
-.item{
+.carousel .item{
     text-align: center;
 }
 .item .caption{
@@ -182,4 +182,172 @@ nav .accountProfile{
     position: relative;
     top: -4px;
     right: -2px;
+}
+.hotCollections{
+    background-color: #F8F8F8;
+    padding: 80px 120px;
+}
+.hotCollections>h2{
+    text-align: center;
+    font-size: 30px; 
+    font-weight: 600;
+}
+.hotCollections>p{
+    text-align: center;
+    color: rgb(102, 99, 99);
+    margin: 20px auto;
+    width: 370px;
+    line-height: 1.4em;
+}
+.collectionDiv .item{
+    position: relative;
+}
+.item #newBtn{
+    position: absolute;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    font-size: 11px;  
+    padding: 3px 8px; 
+    border-radius: 3px; 
+    top: 20px; 
+    left: 20px; 
+}
+.item .favouriteBtn{
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px; 
+    top: 20px;
+    right: 20px;
+    transform: rotateY(90deg);
+    transition: all 0.3s ease;
+}
+.item .compare{
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 10px; 
+    top: 70px;
+    right: 20px;
+    transform: rotateY(90deg);
+    transition: all 0.3s ease;
+
+}
+.item .selectOpt{
+    position: absolute;
+    right: 42px;
+    bottom: 110px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 10px 60px;
+    border-radius: 5px; 
+    transform: translateY(58px);
+    transition: all 0.3s ease;
+}
+.item .cartPara{
+    position: absolute;
+    color: white;   
+    bottom: 74px;
+    left: 47%;
+    transition: all 0.3s ease;
+}
+.selectOpt p{
+    transition: all 0.3s ease;
+}
+.item .selectOpt:hover ~.cartPara{
+    bottom: 118px;
+}
+.collectionDiv .item:hover .favouriteBtn,.collectionDiv .item:hover .compare{
+    transform: rotateY(0deg);
+}
+.collectionDiv .item:hover .selectOpt{
+    transform: translateY(0px);
+}
+.item .selectOpt:hover p{
+    transform: translateY(-28px);
+}
+.collectionDiv .item .itemImg img{ 
+    width: 340px;
+    border-radius: 10px;
+}
+.hotCollections .collectionDiv{ 
+    display: flex;
+    gap: 40px; 
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    margin-bottom: 0px;
+}
+.item .itemContents{
+    padding: 8px 0px;
+    background-color: #f8f8f8;
+    z-index: 1;
+    position: relative;
+}
+.item .itemContents h3{
+    font-weight: 500; 
+}
+.item .itemContents>p{
+    font-size: 14px; 
+    margin: 5px 0px; 
+}
+.itemContents p img{
+    height: 16px;
+}
+.brandStory{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+.brandStory .leftStory{
+    width: 430px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.leftStory video{
+    position: relative;
+    right: 150px;
+}
+.brandStory .rightStory{
+    width: 40%;
+    position: relative;
+    padding: 130px 0px;
+}
+.rightStory h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+.rightStory #rightPara{
+    color: #706a6a;
+    line-height: 1.5em;
+    margin: 35px 0px;
+}
+.rightStory .dateTag{
+    color: #706a6a;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 98px;
+    right: -20px;
+}
+.rightStory .viewStoryBtn{
+    color: white;
+    background-color: black;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 15px 45px;
+    transition: all 0.3s ease;
+}
+.viewStoryBtn:hover{
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
 }
