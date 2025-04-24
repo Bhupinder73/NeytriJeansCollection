@@ -404,3 +404,118 @@ nav .accountProfile{
     left: -124px;
     border-radius: 5px;
 }
+.hotSellProduct{
+    padding: 50px 200px;
+
+}
+.hotSellProduct .headToSell{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    align-items: center;
+}
+.headToSell h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.headToSell h2:hover{
+    cursor: default;
+}
+.headToSell p{
+    background-color: black;
+    color: white;
+    padding: 10px 10px 10px 14px;
+    border-radius: 50%;
+}
+.hotSellProduct .shirtsDiv{
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+}
+.shirtsDiv::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.tShirtCont{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0px;
+}
+.tShirtDiv .tShirtCont h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.tShirtDiv .tShirtCont p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.tShirtDiv .tShirtCont p img{
+    height: 18px;
+}
+.reviewDiv{
+    height: 615px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    background-color: #F8F8F8;
+    padding: 0px 120px;
+    position: relative;
+}
+.reviewDiv p img{
+    height: 20px;
+}
+.reviewDiv p b{
+    font-size: 20px;
+    font-weight: 600;
+}
+.reviewDiv #para{
+    font-size: 23px;
+    color: gray;
+    line-height: 1.5em;
+    font-style: italic;
+}
+.reviewDiv .comma1 img, .comma2 img{
+    height: 100px;
+    opacity: 0.5;
+}
+.comma2 img{
+    transform: rotate(180deg);
+}
+.reviewDiv .comma1{
+    position: absolute;
+    top: 100px;
+    right: 90px;
+    animation-name: anime;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.reviewDiv .comma2{
+    position: absolute;
+    left: 90px;
+    bottom: 91px;
+    animation-name: anime;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes anime{
+    0%{
+            transform: translateY(0px);
+    }
+    50%{
+            transform: translateY(-10px);
+        }
+    100%{
+            transform: translateY(0px);
+        }
+}
