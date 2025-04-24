@@ -519,3 +519,86 @@ nav .accountProfile{
             transform: translateY(0px);
         }
 }
+.newsBlog{
+    padding: 90px 200px;
+}
+.newsBlog>h2{
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+.newsBlog>p{
+    color: gray;
+    text-align: center;
+    width: 380px;
+    margin: 20px auto;
+    line-height: 1.5em;
+}
+.newsBlog .blogDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.newsBlog .blogDiv .blogItem{
+    width: 340px;
+}
+.newsBlog .blogDiv .blogItem .imgDiv1{
+    background-image: url(../images/blogItem1.jpg);
+}
+.newsBlog .blogDiv .blogItem .imgDiv2{
+    background-image: url(../images/blogItem2.jpg);
+}
+.newsBlog .blogDiv .blogItem .imgDiv3{
+    background-image: url(../images/blogItem3.jpg);
+}
+.newsBlog .blogDiv .blogItem .imgDiv{
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+    position: relative;
+}
+.blogItem .imgDiv .imgDateTag{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 3px;
+    top: 40px;
+    left: 40px;
+    transition: all 0.3s ease-in-out;
+}
+.blogItem .blogContent{
+    padding: 25px 0px;
+}
+.blogItem .blogContent>h3{
+    font-size: 24px;
+    font-weight: 600;
+    width: 300px;
+}
+.blogItem .blogContent>h3+p{
+    color: gray;
+    line-height: 1.5em;
+    margin: 14px 0px;
+    width: 320px;
+}
+.blogContent #paraContent{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(77, 75, 75);
+    margin-bottom: 14px;
+}
+.blogContent #paraContent b{
+    font-size: 15px;
+    font-weight: normal;
+}
+.blogContent a{
+    color: black;
+    font-weight: 500;
+}
+.blogItem:hover .imgDateTag{
+    top: 0;
+    left: 0;
+}
