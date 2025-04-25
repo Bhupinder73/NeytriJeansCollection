@@ -4,6 +4,10 @@
     padding: 0;
     font-family: "Outfit", sans-serif;
 }
+body{
+    max-width: 1519.2px;
+    margin: 0px auto;
+}
 header .topNav{
     display: flex;
     justify-content: space-around;
@@ -26,11 +30,15 @@ header .topNav{
 .topNav span a:hover, .topNav select:hover{
     color: grey;
 }
-nav{
+body nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px 0px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.923);
+    z-index: 200;
 }
 nav ul{
     display: flex;
@@ -43,6 +51,10 @@ nav ul li{
     display: flex;
     align-items: center;
     position: relative;
+}
+nav ul li:hover{
+    cursor: pointer;
+    color: grey;
 }
 nav ul li #saleTag{
     background-color: green;
@@ -69,9 +81,15 @@ nav ul li #newTag{
 nav .logo{
     width: 300px;
 }
+nav .logo img:hover{
+    cursor: pointer;
+}
 nav .accountProfile{
     display: flex;
     gap: 20px;
+}
+nav .accountProfile img:hover{
+    cursor: pointer;
 }
 .hero{
     padding: 90px 120px;
@@ -701,6 +719,7 @@ footer{
     padding: 50px 200px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 footer .firstFooter>img+p{
     color: gray;

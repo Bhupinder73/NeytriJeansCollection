@@ -1,0 +1,24 @@
+@media (max-width:1220px){
+    nav>ul{
+        display: none;
+    }
+    .carousel{
+        gap: 20px;
+    }
+    .carousel .imgDiv{
+        width: 200px;
+        height: 200px;
+    }
+    .carousel div img{
+        width: 200px;
+    }
+    .newsBlog .blogDiv{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:1080px) {
+    .carousel{
+        flex-wrap: wrap;
+    }
+}
